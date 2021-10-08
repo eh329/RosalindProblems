@@ -1,5 +1,5 @@
 # Pass the text file from website to read_txt
-# Then we pass the read_txt(rosalind.txt) as argument to nuc_frequency
+# Then pass the read_txt(rosalind.txt) as argument to nuc_frequency
 
 from collections import Counter
 
