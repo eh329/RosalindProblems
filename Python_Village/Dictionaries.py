@@ -5,9 +5,17 @@ def dict_counter(text_file):
     where words are separated by spaces. Words are case-sensitive, and the lines in the output can be in any order.
     """
     file = open(text_file, "r")
-    counter = file.readlines()
+    content = file.read()  
     file.close()
     
-    dictionary = {letter: counter[0].count(letter) for letter in counter[0]. split()}
-    for key, value in dictionary.items():
-        print(key, value)
+    words = content.split()
+    word_counts = {}
+    
+    for word in words:
+        if word in word_counts:
+            word_counts[word] += 1
+        else:
+            word_counts[word] = 1
+    
+    for word, count in word_counts.items():
+        print(word, count)
