@@ -21,4 +21,5 @@ def nuc_frequency(seq):
     Return: Four integers (separated by spaces) counting the respective number of times that 
     the symbols 'A', 'C', 'G', and 'T' occur in s.
     """      
-    return Counter(seq).values()
+    counts = Counter(seq)
+    return f"{counts['A']} {counts['C']} {counts['G']} {counts['T']}"
