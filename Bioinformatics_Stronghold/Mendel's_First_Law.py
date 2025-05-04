@@ -13,13 +13,6 @@ def probability_of_dominant_allele(k, m, n):
     # Total population
     total = k + m + n
     
-    # The key to this problem is to correctly calculate:
-    # 1. The probability of selecting each possible mating pair
-    # 2. The probability that each pair produces an offspring with a dominant allele
-    
-    # Calculate the probability of selecting each pair type
-    # Note: For each pair, we're selecting WITHOUT replacement
-    
     # 1. AA × AA: Both homozygous dominant
     p_AA_AA = (k/total) * ((k-1)/(total-1))
     
