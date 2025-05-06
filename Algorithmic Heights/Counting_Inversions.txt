@@ -1,0 +1,1 @@
+Using any sorting algorithm with a counting variable would do the job.
